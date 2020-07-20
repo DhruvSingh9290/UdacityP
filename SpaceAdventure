@@ -1,0 +1,256 @@
+print("You have been selected by NASA's space pilot program!")
+print("Have fun and be safe!")
+print("Coded by Dhruv Singh")
+print("Space adventure is a text based RPG. Everything in this game is fictional.")
+print("Anything that corrolates to real world events are purely coincidental")
+
+
+def survive():
+    print("You make it to the door")
+    print("You enter to see a very creepy hallway.")
+    print("The only path in is right.")
+    print("Choose one to go right, choose 2 to bail from the castle")
+
+
+
+
+def end():
+    print("You survived!")
+    timer = 5
+    while timer > 0:
+        print(timer, "...")
+        time.sleep(2)
+        timer = timer - 1
+    print("Time to GO!")
+    print()
+    print("Welcome Home!")
+    print()
+    print("Would you like to go back? Choose 1 for Y or choose 2 for N")
+   
+    YN = input("1 or 2 ")
+    YN = int(YN)
+
+    if YN == 1:
+        print("Let's restart! Choose different options!")
+        start()
+    elif YN == 2:
+        print("Good choice")
+    print("Thanks for playing Space Adventure! MY name is Dhruv and I coded this whole project. Thank You!")
+       
+import time
+def start():
+
+    print("Welcome to Space!")
+    print()
+
+
+    print("Your choices effect if you survive")
+    print("There are 4 good endings. See if you can find them all!")
+    print("Time for your first choice")
+    print()
+    print("Choose 1 to go to Mars, choose 2 to go to jupiter")
+
+
+
+
+    number = input("Enter your Choice ")
+    number = int(number)
+
+
+    if number == 1:
+        print("off to Mars!")
+    elif number == 2:
+       
+        print("You rode into the Red Spot.")
+        print("Choose 1 to escape, Choose 2 to explore")
+        yo = input("Choose")
+        yo = int(yo)
+
+        if yo == 1:
+              print("You escaped! Off to Mars!")
+        elif yo == 2:
+           
+          print("Let's see what we can find?")
+          print()
+          print("You see a ship that looks right out of an alien movie!")
+          print()
+          print()
+          print("It reminds you of those old Alien movies!")
+          print("Choose 1 to go in, choose 2 to try and escape")
+          alien = input("Choose your path")
+          alien = int(alien)
+          if alien == 2:
+                  print("You see a ship chasing you!!")
+                  print()
+                  print("Choose 1 to attack back, and choose 2 to boost away")
+                  boost = input("Choose ")
+                  boost = int(boost)
+
+                  if boost == 2:
+                      print("Good Choice! You got away! Off to Mars!")
+                  elif boost == 1:
+                      print("You turn around to fire back, but they pull you in with a tractor beam! You black out.")
+                      print()
+                      print("You wake up while you are being i diseccted. That must suck! Try again.")
+                      start()
+               
+          elif alien == 1:
+             print("You try to aproach sneakily, but someone sees you, and you die. Try again!")
+             start()
+
+
+
+    print("Let's see what Mars has to offer!")
+    print("Choose 1 to adventure Mars, Choose 2 to go to Pluto")
+
+    choice = input("Enter your number ")
+    choice = int(choice)
+
+    if choice == 1:
+        print(" You see the Mars Rover!")
+        print("You get a message from the ISS to replace the plutonium inside the rover.")
+        print("Choose 1 to go replace it, choose 2 stay")
+        rover = input()
+        rover = int(rover)
+        if rover == 1:
+            print("You choose to go.")
+            print("You begin the tedious job of replacing it.")
+            print("Sadly, you forgot which wire does what.")
+            print("There are two wires. 1 red and 2 is blue. WHich one would you like to disconeect from the old plutonium chunk?")
+            replace = input()
+            replace = int(replace)
+            if replace == 2:
+                print("The wire exploded. To bad so sad! Try again.")
+                start()
+            elif replace == 1:
+                print("You chose the right wire!")
+                print("After replacing it, you only have enough fuel to get home.")
+                print("Let us be of then!")
+                end()
+        elif rover == 2:
+            print("You sleep only to wake up to see a monster. Better luck next time!")
+            start()
+    elif choice == 2:
+        print("Off to Pluto!")
+        print()
+        print("It's very cold! You can try to activate your suit heater and explore, or you can wait and charge your suit heater while you sleep! Choose 1 or 2")
+        heat = input()
+        heat = int(heat)
+        if heat == 2:
+            print("After waking up you hear a noise. Press 1 to investigate, or choose 2 to go back to sleep")
+            hear = input()
+            hear = int(hear)
+            if hear == 1:
+                print("You go to investigate, but you hear a thud behind you as you exit the dormitory")
+                print()
+                print("You look back to see a monster. Better luck next time!")
+                start()
+            elif hear == 2:
+                print("You go back to sleep...")
+                print()
+                print("Sadly you never wake up again. Better luck next time!")
+                start()
+        elif heat == 1:
+           print("You choose to go outside")
+           print("Your Heater is low on juice, so you have to hurry up!")
+           print("You see a big castle-looking structure.")
+           print("Would you like to aproach it? Press 1 to go, press 2 to leave")
+           castle = input()
+           castle = int(castle)
+           if castle == 2:
+               print("You turn to leave, but something hits your back. As you lose your vision, you see a humanoid figure.")
+               print("Better luck next time!")
+               start()
+           elif castle == 1:
+               print("You approach the castle.")
+               print("You see a midivial castle with a drawbridge over some green bubbling goo")
+               print("There is a way around")
+               print("Would you like to go there or run away. Choose 1 or 2")
+
+               bridge = input()
+               bridge = int(bridge)
+               if bridge == 2:
+                   print("You turn to leave, but something hits your back. As you lose your vision, you see a humanoid figure.")
+                   print("Better luck next time!")
+                   start()
+               elif bridge == 2:
+                   print("You approach, and you start to hear cries that sound like humans.")
+                   print("Being the good person that you are, you go to check it out.")
+                   print("Choose 1 to make a mad dash to the side door, press 2 to approach stealthily, althrough that will take longer")
+                   door = input()
+                   door = int(door)
+                   if door == 1:
+                       survive()
+                       bail = input()
+                       bail = int(bail)
+                       if bail == 2:
+                           print("You escape on to your ship and head home. Congrats!")
+                           end()
+                       elif bail == 1:
+                           print("You go in and sneakily walk down the hallway.")
+                           print("You see guards watching you, so you run.")
+                           print("You black out")
+                           print()
+                           print("You wake up in a cell")
+                           print("All your gear is removed, and somehow you are breathing")
+                           print("Your door is open. Choose 1 to run, Choose 2 to stay and wait")
+                           cell = input()
+                           cell = int(cell)
+                           if cell == 1:
+                               print("You run and get caught. That sucks. Better Luck Next Time!")
+                               start()
+                           elif cell == 2:
+                               print("You stay to see what's up")
+                               print("Humaniod figures appear, shrouded by the darkness.")
+                               print("They say it's you turn to be dissected")
+                               print("Choose 1 to accept your fate, choose 2 to run")
+                               turn = input()
+                               turn = int(turn)
+                               if turn == 1:
+                                   print("You accept your fate. Better luck next time!")
+                                   start()
+                               elif turn == 2:
+                                   print("You try to run, but they hold you down. Better luck next time")
+                                   start()
+                   if door == 2:
+                       print("You try to sneakily approach, but something hits the back of your head, and you black out. Better Luck next time!")
+                       start()
+           
+    print()
+    print(" Choose 1 to stay choose 2 to go back to Earth")
+
+    oof = input("It's time for your final choice in space ")
+    oof = int(oof)
+
+    if oof == 1:
+        print("You choose to stay")
+        print("Would you like to stay here or on a different planet? Choose 1 to stay, 2 to leave")
+        leave = input()
+        leave = int(leave)
+        if leave == 1:
+            print("You stay for a week before getting hit by a stray rock. Try again!")
+            start()
+        elif leave == 2:
+            print("You have enough fuel to get to Earth or Mercury. Choose 1 or 2")
+            yoyo = input()
+            yoyo = int(yoyo)
+            if yoyo == 2:
+                print("Let's go to Mercury!")
+                print("You have arrived!")
+                print("Choose 1 to explore, choose 2 to call NASA if you've changed your mind.")
+                nasa = input()
+                nasa = int(nasa)
+                if nasa == 1:
+                    print("You leave your shuttle and you get hi by a rock. You should've gone home! Try again.")
+                    start()
+           
+       
+
+    elif oof == 2:
+        end()
+        print("Thanks for playing Space Adventure! MY name is Dhruv and I coded this whole project. Thank You!")
+        if nasa == 2:
+            end()
+            if yoyo == 1:
+               end()
+start()
